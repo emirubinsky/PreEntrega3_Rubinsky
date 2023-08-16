@@ -9,15 +9,15 @@
  }*/
 
  .barra {
-    background-color: #557f7d;
+    background-color: $fondo1;
     height: 100px;
-    color: white;
+    color: $fondo2;
     text-align: center;
     padding: 30px; 
-}
+  }
  .letra{
     font-size-adjust: 10px;
-}
+  }
 
 
  
@@ -34,8 +34,8 @@
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #557f7d;
-    color: #fefefe;
+    background-color: $fondo1;
+    color: $fondo2;
   }
   
   
@@ -61,8 +61,8 @@
 
     .footer_texto{
     text-align: center;
-    color: white;
-}
+    color: $fondo2;
+   }
 
 
 
@@ -72,17 +72,17 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #557f7d;
-    color: #fefefe;
+    background-color: $fondo1;
+    color: $fondo2;
     align-items:center;
     }
 .barra_contacto{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #557f7d;
+    background-color: $fondo1;
     height: 70px;
-    color: white;
+    color: $fondo2;
     text-align: center;
     font-size: 10px;    
    }
@@ -99,14 +99,14 @@
         width: 100%;
         height: 30px;
         line-height: 60px; 
-        background-color: #557f7d;
-        color: #fefefe;
+        background-color: $fondo1;
+        color: $fondo2;
         align-items:center;
     }
     .barra_contacto{
-        background-color: #557f7d;
+        background-color: $fondo1;
         height: 30px;
-        color: white;
+        color: $fondo2;
         text-align: center;
         padding: 30px; 
         font-size: 10px;

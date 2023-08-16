@@ -1,9 +1,9 @@
 header {
-    background: #557f7d;
+    background: $fondo1;
     justify-content: space-between;
   
     .colorMenu {
-      background-color: #557f7d;
+      background-color: $fondo1;
     }
   
     .navegador_logo img {
@@ -18,7 +18,7 @@ header {
     }
   
     a {
-      color: white;
+      color: $fondo2;
       text-decoration: none;
     }
   
@@ -29,7 +29,7 @@ header {
     .home_titulo {
       text-align: center;
       margin: 20px;
-      color: #557f7d;
+      color: $fondo1;
       font-size: 300%;
     }
   
@@ -46,7 +46,7 @@ header {
   Sobre escritura del AZUL del link de BS
  */
     .nav-link{
-    color: white;
+    color: $fondo2;
     }
 
 
@@ -57,7 +57,7 @@ header {
     justify-content: space-between; /* Alinea los elementos a los extremos (izquierda y derecha) */
     align-items: center; /* Centra verticalmente los elementos en el navbar */
     background-color: #557f7d;
-    color: #fff;
+    color: $fondo2;
     padding: 10px;
     height: 30px;
 }
@@ -80,7 +80,7 @@ header {
   }
   
   .navegador_botones a {
-    color: #fff;
+    color: $fondo2;
     text-decoration: none;
   }
 
