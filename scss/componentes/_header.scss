@@ -1,0 +1,91 @@
+header {
+    background: #557f7d;
+    justify-content: space-between;
+  
+    .colorMenu {
+      background-color: #557f7d;
+    }
+  
+    .navegador_logo img {
+      display: flex;
+      text-align: left;
+      height: 30px;
+      width: 50px;
+    }
+  
+    .navegador_botones {
+      line-height: 90px;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .img {
+      display: inline-block;
+    }
+  
+    .home_titulo {
+      text-align: center;
+      margin: 20px;
+      color: #557f7d;
+      font-size: 300%;
+    }
+  
+    .logo_organica {
+      width: 50px;
+      margin: 6px;
+    }
+
+/*
+  Sobre escritura del AZUL del link de BS
+ */
+    .nav-link{
+    color: white;
+    }
+
+
+/** Estilos de la pagina: CONTACTO **/
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos (izquierda y derecha) */
+    align-items: center; /* Centra verticalmente los elementos en el navbar */
+    background-color: #557f7d;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+}
+  
+.navegador_botones  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  .navegador_botones li {
+    margin-left: 20px;
+  }
+  
+  .navegador_botones li:first-child {
+    margin-left: 0;
+  }
+  
+  .navegador_botones a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  justify-content-end {
+    justify-content: flex-end!important;
+  }
+
+
+
+
+}

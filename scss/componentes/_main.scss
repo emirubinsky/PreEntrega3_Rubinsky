@@ -1,0 +1,39 @@
+.propiedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+    .propiedad {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .containerImagenPropiedad {
+      height: 25em;
+      width: 25em;
+    }
+  
+    .centrarPalabras {
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+    }
+  
+    .containerImagenEdificio {
+      height: 600px;
+      width: 500px;
+      display: inline-block;
+    }
+  
+    .containerImagenReforma {
+      height: 600px;
+      width: 500px;
+      display: inline-block;
+    }
+  
+    /* Clase para delimitar tamaño de las imágenes todas iguales */
+    .card-image-propiedad {
+      height: 15em;
+      width: 15em;
+    }
+  }
