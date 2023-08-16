@@ -1,114 +1,4 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Raleway;
-}
-
-body {
-  margin: 0px;
-}
-
-header {
-  background: #557f7d;
-  justify-content: space-between;
-}
-
-.colorMenu {
-  background-color: #557f7d;
-}
-
-/*nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 20px;
-    padding-left: 0%;
-    padding-right: 5%;
-}*/
-.navegador_logo img {
-  display: flex;
-  text-align: left;
-  height: 30px;
-  width: 50px;
-}
-
-.navegador_botones {
-  line-height: 90px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.img {
-  display: inline-block;
-}
-
-.propiedades {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.propiedad {
-  display: flex;
-  flex-direction: column;
-}
-
-.containerImagenPropiedad {
-  height: 25em;
-  width: 25em;
-}
-
-.centrarPalabras {
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-}
-
-.containerImagenEdificio {
-  height: 600px;
-  width: 500px;
-  display: inline-block;
-}
-
-.containerImagenReforma {
-  height: 600px;
-  width: 500px;
-  display: inline-block;
-}
-
-/*
-Clase para delimitar tamaño de las imagenes todas iguales
-*/
-.card-image-propiedad {
-  height: 15em;
-  width: 15em;
-}
-
-/*.footer {
-    background-color: black;
-    color: #fefefe;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}*/
-.barra {
-  background-color: #557f7d;
-  height: 100px;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-.letra {
-  font-size-adjust: 10px;
-}
-
 .estudio {
   text-align: center;
 }
@@ -159,22 +49,6 @@ Clase para delimitar tamaño de las imagenes todas iguales
 
 .centrado3 {
   margin-left: 100px;
-}
-
-/* ESTILOS DEL HEADER */
-/*
-*
-*/
-.home_titulo {
-  text-align: center;
-  margin: 20px;
-  color: #557f7d;
-  font-size: 300%;
-}
-
-.logo_organica {
-  width: 50px;
-  margin: 6px;
 }
 
 /* Sticky footer styles
@@ -236,13 +110,6 @@ code {
   text-decoration: underline;
 }
 
-/*
- Sobre escritura del AZUL del link de BS
-*/
-.nav-link {
-  color: white;
-}
-
 /**  Sobre escrituras del CARD **/
 .card-body {
   text-align: center;
@@ -251,37 +118,6 @@ code {
 
 .card-border {
   border-color: transparent;
-}
-
-/** Estilos de la pagina: CONTACTO **/
-.navbar {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos (izquierda y derecha) */
-  align-items: center; /* Centra verticalmente los elementos en el navbar */
-  background-color: #557f7d;
-  color: #fff;
-  padding: 10px;
-  height: 30px;
-}
-
-.navegador_botones {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navegador_botones li {
-  margin-left: 20px;
-}
-
-.navegador_botones li:first-child {
-  margin-left: 0;
-}
-
-.navegador_botones a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .css_grid_form_container {
@@ -385,10 +221,6 @@ justify-content-end {
 
 .css_grid_form_buttons {
   grid-column: 1/3;
-}
-
-justify-content-end {
-  justify-content: flex-end !important;
 }
 
 .footer_contacto {

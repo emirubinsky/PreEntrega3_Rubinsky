@@ -8,13 +8,108 @@
      left: 0;
  }*/
 
-.barra {
+ .barra {
     background-color: #557f7d;
     height: 100px;
     color: white;
     text-align: center;
     padding: 30px; 
 }
-.letra{
+ .letra{
     font-size-adjust: 10px;
 }
+
+
+ 
+ /* Sticky footer styles
+ -------------------------------------------------- */
+ html {
+    position: relative;
+    min-height: 100%;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #557f7d;
+    color: #fefefe;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+
+  /** ESTILOS DEL FOOTER **/
+
+    .footer_texto{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+    .footer_contacto{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #557f7d;
+    color: #fefefe;
+    align-items:center;
+    }
+.barra_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #557f7d;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 10px;    
+   }
+
+  
+  
+    
+    
+    
+   
+    .footer_contacto{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        line-height: 60px; 
+        background-color: #557f7d;
+        color: #fefefe;
+        align-items:center;
+    }
+    .barra_contacto{
+        background-color: #557f7d;
+        height: 30px;
+        color: white;
+        text-align: center;
+        padding: 30px; 
+        font-size: 10px;
+        margin-bottom: 0%
+}
+
