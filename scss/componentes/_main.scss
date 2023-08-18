@@ -1,104 +1,60 @@
     .propiedades {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  
-    .propiedad {
       display: flex;
-      flex-direction: column;
-    }
-  
-    .containerImagenPropiedad {
-      height: 25em;
-      width: 25em;
-    }
-  
-    .centrarPalabras {
-      text-align: center;
-      padding: 10px;
-      font-size: 30px;
-    }
-  
-    .containerImagenEdificio {
-      height: 600px;
-      width: 500px;
-      display: inline-block;
-    }
-  
-    .containerImagenReforma {
-      height: 600px;
-      width: 500px;
-      display: inline-block;
-    }
-  
-    /* Clase para delimitar tamaño de las imágenes todas iguales */
-    .card-image-propiedad {
-      height: 15em;
-      width: 15em;
-    }
+      flex-direction: row;
+      justify-content: space-evenly;
 
-  
+      .propiedad {
+        display: flex;
+        flex-direction: column;
+      }
 
-    /*Estilos tarjetas*/
-    .card-img-top {
-    max-height: 250px;
-    overflow: hidden;
+      .card-title a:link {
+        font-size: 30px;
+        background-color: transparent;
+        color: #000000;
+        text-decoration: none;
+      }
+
+      .card-title a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      /**  Sobre escrituras del CARD **/
+
+      .card-body {
+        text-align: center;
+        color: black
+      }
+
+      .card-border {
+        border-color: transparent;
+      }
+
+      justify-content-end {
+        justify-content: flex-end !important;
+      }
+
     }
 
-    .card-title a:link {
-    font-size: 30px;
-    background-color: transparent;
-    color: #000000;
-    text-decoration: none;
+    .css_grid_form_container {
+      padding-left: 3%;
+      padding-top: 3%;
+
+      .css_grid_form {
+        display: grid;
+        grid-template-rows: 15% 15% 15% 20% 15%;
+        grid-template-columns: 20% 50%;
+        column-gap: 5px;
+        row-gap: 15px;
+      }
+
+      .css_grid_form_text_area {
+        grid-column: 1 / 3;
+      }
+
+      .css_grid_form_buttons {
+        grid-column: 1 / 3;
+      }
     }
-
-    .card-title a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-    }
-
-
-
-/**  Sobre escrituras del CARD **/
-
-    .card-body{
-    text-align: center;
-    color: black
-    }
-
-    .card-border{
-    border-color: transparent;
-    }
-
-
-    .css_grid_form_container{
-    padding-left: 3%;
-    padding-top: 3%;
-    }
-
-    .css_grid_form{
-    display: grid;
-    grid-template-rows: 15% 15% 15% 20% 15%;
-    grid-template-columns: 20% 50%;
-    column-gap: 5px;
-    row-gap: 15px;
-    }
-
-    .css_grid_form_text_area{
-    grid-column: 1 / 3;
-    }
-
-    .css_grid_form_buttons{
-    grid-column: 1 / 3;
-    }
-
-
-    justify-content-end {
-    justify-content: flex-end!important;
-    }
-
-
-
-
-}

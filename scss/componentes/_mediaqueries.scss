@@ -1,11 +1,9 @@
+/* Estilos para teléfonos móviles (ancho de pantalla menor o igual a 480px) */
+@media only screen and (max-width: 480px) {
 
-    /* Estilos para teléfonos móviles (ancho de pantalla menor o igual a 480px) */
-    @media only screen and (max-width: 480px) {
-        
-        .css_grid_form{
+    .css_grid_form {
         grid-template-columns: 1fr;
-        }
-        
-        
-}  
-  
+    }
+
+
+}
