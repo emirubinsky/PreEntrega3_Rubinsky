@@ -1,3 +1,18 @@
-* {   
+* {
     font-family: Raleway;
+}
+
+.container {
+
+    /** Sobre escrituras del CARD **/
+
+    .card-body {
+        text-align: center;
+        color: black
+    }
+
+    .card-border {
+        border-color: transparent;
+    }
+
 }

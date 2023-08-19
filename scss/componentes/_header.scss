@@ -2,6 +2,12 @@ header {
   background: $fondo1;
   justify-content: space-between;
 
+  /* Boostrap sobre-escritura
+    evitamos un espacio extra derecha */
+  .row {
+    margin: 0px;
+  }
+
   a {
     color: $fondo2;
     text-decoration: none;

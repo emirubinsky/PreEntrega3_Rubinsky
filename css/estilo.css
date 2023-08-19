@@ -1,12 +1,24 @@
 * {
   font-family: Raleway; }
 
+.container {
+  /** Sobre escrituras del CARD **/ }
+  .container .card-body {
+    text-align: center;
+    color: black; }
+  .container .card-border {
+    border-color: transparent; }
+
 header {
   background: #557f7d;
   justify-content: space-between;
+  /* Boostrap sobre-escritura
+    evitamos un espacio extra derecha */
   /*
   Sobre escritura del AZUL del link de BS
  */ }
+  header .row {
+    margin: 0px; }
   header a {
     color: #fff;
     text-decoration: none; }
