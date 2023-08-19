@@ -13,6 +13,14 @@
 
     .card-border {
         border-color: transparent;
-    }
 
+        /** Animaciones de las CARD **/
+        img { 
+            transition: all .2s ease-in-out; 
+        }
+        
+        img:hover { 
+            transform: scale(1.1); 
+        }
+    }
 }

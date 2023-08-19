@@ -7,7 +7,12 @@
     text-align: center;
     color: black; }
   .container .card-border {
-    border-color: transparent; }
+    border-color: transparent;
+    /** Animaciones de las CARD **/ }
+    .container .card-border img {
+      transition: all .2s ease-in-out; }
+    .container .card-border img:hover {
+      transform: scale(1.1); }
 
 header {
   background: #557f7d;
@@ -38,6 +43,17 @@ header {
     color: #fff; }
   header justify-content-end {
     justify-content: flex-end !important; }
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .css_grid_form_container {
   padding-left: 3%;
