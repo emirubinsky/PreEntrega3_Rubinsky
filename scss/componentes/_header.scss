@@ -34,47 +34,7 @@ header {
     color: $fondo2;
   }
 
-
-  /** Estilos de la pagina: CONTACTO **/
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    /* Alinea los elementos a los extremos (izquierda y derecha) */
-    align-items: center;
-    /* Centra verticalmente los elementos en el navbar */
-    background-color: #557f7d;
-    color: $fondo2;
-    padding: 10px;
-    height: 30px;
-  }
-
-  .navegador_botones {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-
-  }
-
-  .navegador_botones li {
-    margin-left: 20px;
-  }
-
-  .navegador_botones li:first-child {
-    margin-left: 0;
-  }
-
-  .navegador_botones a {
-    color: $fondo2;
-    text-decoration: none;
-  }
-
-
   justify-content-end {
     justify-content: flex-end !important;
   }
-
-
 }

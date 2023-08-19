@@ -1,16 +1,12 @@
 * {
   font-family: Raleway; }
 
-body {
-  margin: 0px; }
-
 header {
   background: #557f7d;
   justify-content: space-between;
   /*
   Sobre escritura del AZUL del link de BS
- */
-  /** Estilos de la pagina: CONTACTO **/ }
+ */ }
   header a {
     color: #fff;
     text-decoration: none; }
@@ -28,54 +24,7 @@ header {
     color: #0a58ca; }
   header .nav-link {
     color: #fff; }
-  header .navbar {
-    display: flex;
-    justify-content: space-between;
-    /* Alinea los elementos a los extremos (izquierda y derecha) */
-    align-items: center;
-    /* Centra verticalmente los elementos en el navbar */
-    background-color: #557f7d;
-    color: #fff;
-    padding: 10px;
-    height: 30px; }
-  header .navegador_botones {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  header .navegador_botones li {
-    margin-left: 20px; }
-  header .navegador_botones li:first-child {
-    margin-left: 0; }
-  header .navegador_botones a {
-    color: #fff;
-    text-decoration: none; }
   header justify-content-end {
-    justify-content: flex-end !important; }
-
-.propiedades {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /**  Sobre escrituras del CARD **/ }
-  .propiedades .propiedad {
-    display: flex;
-    flex-direction: column; }
-  .propiedades .card-title a:link {
-    font-size: 30px;
-    background-color: transparent;
-    color: #000000;
-    text-decoration: none; }
-  .propiedades .card-title a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline; }
-  .propiedades .card-body {
-    text-align: center;
-    color: black; }
-  .propiedades .card-border {
-    border-color: transparent; }
-  .propiedades justify-content-end {
     justify-content: flex-end !important; }
 
 .css_grid_form_container {
@@ -96,13 +45,6 @@ header {
 .footer_texto {
   text-align: center;
   color: #fff; }
-
-.barra {
-  background-color: #557f7d;
-  height: 100px;
-  color: #fff;
-  text-align: center;
-  padding: 30px; }
 
 /* TODO- A renombrar como "letra-copyright*/
 .letra {
