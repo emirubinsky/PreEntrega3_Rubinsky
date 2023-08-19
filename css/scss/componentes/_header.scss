@@ -1,0 +1,46 @@
+header {
+  background: $fondo1;
+  justify-content: space-between;
+
+  /* Boostrap sobre-escritura
+    evitamos un espacio extra derecha */
+  .row {
+    margin: 0px;
+  }
+
+  a {
+    color: $fondo2;
+    text-decoration: none;
+  }
+
+  .img {
+    display: inline-block;
+  }
+
+  .home_titulo {
+    text-align: center;
+    margin: 20px;
+    color: $fondo1;
+    font-size: 300%;
+  }
+
+  .logo_organica {
+    width: 50px;
+    margin: 6px;
+  }
+
+  .navegador_botones_link:hover {
+    color: #0a58ca;
+  }
+
+  /*
+  Sobre escritura del AZUL del link de BS
+ */
+  .nav-link {
+    color: $fondo2;
+  }
+
+  justify-content-end {
+    justify-content: flex-end !important;
+  }
+}
