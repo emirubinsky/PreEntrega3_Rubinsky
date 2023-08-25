@@ -19,11 +19,13 @@ html {
 }
 
 .footer {
-  position: absolute;
+  
   bottom: 0;
   width: 100%;
+  margin-top: auto;
+  display: flex;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  
   line-height: 60px;
   /* Vertically center the text there */
   background-color: $fondo1;
@@ -47,6 +49,16 @@ code {
   font-size: 80%;
 }
 
-  
+.redes li{
+padding: 10px;
+margin-top: 0%;
+}
 
+.redes ul{
+  display: flex;
+}
 
+.redes{
+  display: flex;
+  justify-content: end;
+}

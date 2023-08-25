@@ -60,20 +60,9 @@ header justify-content-end {
 }
 
 body {
-  -webkit-animation: fadeInAnimation ease 2s;
-          animation: fadeInAnimation ease 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -92,8 +81,7 @@ body {
   display: grid;
   grid-template-rows: 15% 15% 15% 20% 15%;
   grid-template-columns: 20% 50%;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   row-gap: 15px;
 }
 .css_grid_form_container .css_grid_form_text_area {
@@ -122,11 +110,11 @@ html {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
+  display: flex;
   /* Set the fixed height of the footer here */
-  height: 60px;
   line-height: 60px;
   /* Vertically center the text there */
   background-color: #557f7d;
@@ -147,4 +135,20 @@ body > .container {
 
 code {
   font-size: 80%;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+.redes li {
+  padding: 10px;
+  margin-top: 0%;
+}
+
+.redes ul {
+  display: flex;
+}
+
+.redes {
+  display: flex;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=estilo.css.map */
