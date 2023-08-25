@@ -24,9 +24,10 @@ html {
   width: 100%;
   margin-top: auto;
   display: flex;
+  align-items: center;
   /* Set the fixed height of the footer here */
   
-  line-height: 60px;
+  line-height: 30px;
   /* Vertically center the text there */
   background-color: $fondo1;
   color: $fondo2;
@@ -52,6 +53,7 @@ code {
 .redes li{
 padding: 10px;
 margin-top: 0%;
+list-style:none;
 }
 
 .redes ul{

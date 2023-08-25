@@ -77,18 +77,25 @@ body {
   padding-left: 3%;
   padding-top: 3%;
 }
-.css_grid_form_container .css_grid_form {
+
+.css_grid_form {
   display: grid;
   grid-template-rows: 15% 15% 15% 20% 15%;
   grid-template-columns: 20% 50%;
   column-gap: 5px;
   row-gap: 15px;
 }
-.css_grid_form_container .css_grid_form_text_area {
+
+.css_grid_form_text_area {
   grid-column: 1/3;
 }
-.css_grid_form_container .css_grid_form_buttons {
+
+.css_grid_form_buttons {
   grid-column: 1/3;
+}
+
+.container_bajopantalla {
+  min-height: 90vh;
 }
 
 /** ESTILOS DEL FOOTER **/
@@ -114,8 +121,9 @@ html {
   width: 100%;
   margin-top: auto;
   display: flex;
+  align-items: center;
   /* Set the fixed height of the footer here */
-  line-height: 60px;
+  line-height: 30px;
   /* Vertically center the text there */
   background-color: #557f7d;
   color: #fff;
@@ -140,6 +148,7 @@ code {
 .redes li {
   padding: 10px;
   margin-top: 0%;
+  list-style: none;
 }
 
 .redes ul {
