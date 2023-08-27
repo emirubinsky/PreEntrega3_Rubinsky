@@ -36,3 +36,11 @@ body {
   .container_bajopantalla{
     min-height: 90vh;
   }
+
+  .mapcentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 315px;
+  }

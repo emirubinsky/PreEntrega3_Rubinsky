@@ -98,6 +98,14 @@ body {
   min-height: 90vh;
 }
 
+.mapcentro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-left: 315px;
+}
+
 /** ESTILOS DEL FOOTER **/
 .footer_texto {
   text-align: center;
