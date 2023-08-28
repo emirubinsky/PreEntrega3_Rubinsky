@@ -143,6 +143,10 @@ body {
   font-weight: bold;
 }
 
+.project-description {
+  font-size: 16px;
+}
+
 /** ESTILOS DEL FOOTER **/
 .footer_texto {
   text-align: center;
