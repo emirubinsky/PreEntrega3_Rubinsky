@@ -1,12 +1,10 @@
 {
-  "name": "preentrega3_rubinsky",
+  "name": "proyectofinal_rubinsky",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +17,6 @@
   },
   "homepage": "https://github.com/emirubinsky/PreEntrega3_Rubinsky#readme",
   "devDependencies": {
-    "node-sass": "^9.0.0",
     "nodemon": "^3.0.1"
   }
 }
