@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Raleway;
 }
@@ -124,7 +125,6 @@ body {
 
 .arquitectas {
   margin-bottom: 35px;
-  width: 100px;
 }
 
 .contact-info {
@@ -209,4 +209,14 @@ code {
 .redes {
   display: flex;
   justify-content: end;
+}
+
+/* Estilos para teléfonos móviles (ancho de pantalla menor o igual a 480px) */
+@media only screen and (max-width: 480px) {
+  .arquitectas img {
+    width: 100%;
+  }
+  .css_grid_form {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=estilo.css.map */
