@@ -113,14 +113,12 @@ body {
 
 .mapcentro {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 100px;
-  -webkit-margin-end: 200px;
-          margin-inline-end: 200px;
-  margin-left: 1050px;
-  position: absolute;
-  top: 420px;
+}
+
+.imgmap {
+  width: 80%;
 }
 
 .arquitectas {

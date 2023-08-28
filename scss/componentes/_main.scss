@@ -37,15 +37,14 @@ body {
     min-height: 90vh;
   }
 
-  .mapcentro{
+  .mapcentro {
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
-    margin-bottom: 100px;
-    margin-inline-end: 200px;
-    margin-left: 1050px;
-    position: absolute;
-    top: 420px;
+  }
+
+  .imgmap {
+    width: 80%;
   }
 
   .arquitectas{
