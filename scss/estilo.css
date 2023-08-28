@@ -5,21 +5,17 @@
 .container {
   /** Sobre escrituras del CARD **/
 }
-
 .container .card-body {
   text-align: center;
   color: black;
 }
-
 .container .card-border {
   border-color: transparent;
   /** Animaciones de las CARD **/
 }
-
 .container .card-border img {
   transition: all 0.2s ease-in-out;
 }
-
 .container .card-border img:hover {
   transform: scale(1.1);
 }
@@ -33,53 +29,44 @@ header {
    Sobre escritura del AZUL del link de BS
   */
 }
-
 header .row {
   margin: 0px;
 }
-
 header a {
   color: #fff;
   text-decoration: none;
 }
-
 header .img {
   display: inline-block;
 }
-
 header .home_titulo {
   text-align: center;
   margin: 20px;
   color: #557f7d;
   font-size: 300%;
 }
-
 header .logo_organica {
   width: 50px;
   margin: 6px;
 }
-
 header .navegador_botones_link:hover {
   color: #0a58ca;
 }
-
 header .nav-link {
   color: #fff;
 }
-
 header justify-content-end {
   justify-content: flex-end !important;
 }
 
 body {
   -webkit-animation: fadeInAnimation ease 2s;
-  animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-
 @-webkit-keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -96,6 +83,7 @@ body {
     opacity: 1;
   }
 }
+
 .css_grid_form_container {
   padding-left: 3%;
   padding-top: 3%;
@@ -106,7 +94,7 @@ body {
   grid-template-rows: 15% 15% 15% 20% 15%;
   grid-template-columns: 20% 50%;
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
   row-gap: 15px;
 }
 
@@ -128,7 +116,7 @@ body {
   align-items: center;
   margin-bottom: 100px;
   -webkit-margin-end: 200px;
-  margin-inline-end: 200px;
+          margin-inline-end: 200px;
   margin-left: 1050px;
   position: absolute;
   top: 420px;
@@ -215,6 +203,4 @@ code {
 .redes {
   display: flex;
   justify-content: end;
-} 
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */

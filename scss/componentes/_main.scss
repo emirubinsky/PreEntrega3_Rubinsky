@@ -41,10 +41,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
-    margin-left: 315px;
+    margin-bottom: 100px;
+    margin-inline-end: 200px;
+    margin-left: 1050px;
+    position: absolute;
+    top: 420px;
   }
 
   .arquitectas{
-   margin-bottom: 35px;
+    margin-bottom: 35px;
   }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea a la izquierda */
+    padding: 20px;
+    margin-top: 80px; /* Ajusta el margen superior */
+    margin-left: 60px; /* Ajusta el margen izquierdo */
+  }
+
+.contact-item {
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+.contact-item strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
