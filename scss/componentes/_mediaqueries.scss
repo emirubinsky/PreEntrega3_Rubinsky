@@ -10,5 +10,16 @@
     .css_grid_form {
         grid-template-columns: 1fr;
     }
+
+    .mapcentro {
+        justify-content: center;
+        flex-direction: column;
+    }
   
+    .mapcentro div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom:10px;
+    }
 }
