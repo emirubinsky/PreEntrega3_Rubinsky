@@ -138,6 +138,10 @@ body {
   padding-top: 15px;
 }
 
+.carousel-indicators {
+  list-style: none;
+}
+
 /** ESTILOS DEL FOOTER **/
 .footer_texto {
   text-align: center;
