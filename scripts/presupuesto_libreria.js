@@ -21,8 +21,11 @@ document.getElementById('btn-simulador').addEventListener('click',
         // Con esto evitamos que se haga "submit" del formulario
         event.preventDefault();
 
+        const metrosCuadrados = document.getElementById('metros_cuadrados').value;
+        const cantidadCuotas = document.getElementById('cantidad_cuotas').value;
+
         // Ejecutamos la funcion que esta dentro del objeto-presupuestador
-        objetoPresupuestador.ejecutarPresupuestador()
+        objetoPresupuestador.ejecutarPresupuestador(metrosCuadrados, cantidadCuotas)
     });
 
 /*
@@ -30,30 +33,32 @@ document.getElementById('btn-simulador').addEventListener('click',
 */
 
 
-function presupuestacion() {
-    
+function presupuestacion(cantidadMetrosCuadrados, cantidadCuotas) {
+    // Codigo personalizado
 
-    alert(`Orgánica.
+    /*alert(`Orgá
+    Nica.
     ============================================
     Simulador Presupuesto de obra por Metro Cuadrado
     ============================================
-    A continuación ingresará los parámetros de la obra que le gustaría que realicemos con conjunto.
+    A continuación ingresará los parámetros de la obra que le gustaría que realicemos en conjunto.
                           
     PROMOS 2023
     - Si tu obra tiene una superficie mayor a 100mt2 entonces tienes 5% descuento
     - Si tu obra tiene una superficie mayor a 200mt2 entonces tienes 8% descuento
     ============================================`)
-    let seguirTrabajando = true
+    */
+    //let seguirTrabajando = true
 
     // Aquí llamo a la propiedad DENTRO del objeto
     const precioMetroEnDolares = this.CONSTANTE_PRECIO_METRO_EN_DOLARES;
 
-    
-    while (seguirTrabajando) {
+   
+    //while (seguirTrabajando) {
 
-        const cantidadMetrosCuadrados = parseInt(prompt('Ingresar metros cuadrados de la obra a realizar:'))
+        // const cantidadMetrosCuadrados = parseInt(prompt('Ingresar metros cuadrados de la obra a realizar:'))
 
-        const cantidadCuotas = parseInt(prompt('Ingresar cantidad de cuotas a pagar:\nOpc A: Entre 1 a 3 cuotas: 0% interes.\nOpc B: Entre 4 a 6 cuotas: 15% interes\nOpc C: Entre 7 a 12 cuotas cuotas: 30% interes'))
+        // const cantidadCuotas = parseInt(prompt('Ingresar cantidad de cuotas a pagar:\nOpc A: Entre 1 a 3 cuotas: 0% interes.\nOpc B: Entre 4 a 6 cuotas: 15% interes\nOpc C: Entre 7 a 12 cuotas cuotas: 30% interes'))
 
         // INFO: Codigo reemplazado por una llamada a funcion
         let descuentoMetrosCuadrados = obtenerDescuentoPorMetros(cantidadMetrosCuadrados)
@@ -81,6 +86,7 @@ function presupuestacion() {
         }
 
         // Mostramos resultados
+        /*
         alert(`Orgánica.
     ============================================
     Simulador Presupuesto - RESULTADOS
@@ -98,14 +104,22 @@ function presupuestacion() {
     ============================================
     
     Presione ENTER para continuar`)
+    */
 
         let desgloseCuotas = "";
         let numeroCuota = 1;
-        arrayDeCuotas.map(cuota => {
-            desgloseCuotas += `\nCuota nº${numeroCuota} = ${cuota} USD`
-            numeroCuota++
-        })
 
+        const tableBody = document.getElementById('tableBody');
+        tableBody.innerHTML = '';
+
+        arrayDeCuotas.forEach(cuota => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>Cuota nº${numeroCuota}</td> <td>${cuota}</td>`;
+            tableBody.appendChild(row);
+            numeroCuota++
+        });
+
+/*
         alert(`Orgánica.
     ============================================
     Simulador Presupuesto - Desglosa cuotas
@@ -116,12 +130,14 @@ function presupuestacion() {
     ============================================
     
     Presione ENTER para continuar`)
+*/
+        // const teclaApretada = prompt('Simulacion finalizada.\nPresione X para salir.')
 
-        const teclaApretada = prompt('Simulacion finalizada.\nPresione X para salir.')
+        // seguirTrabajando = teclaApretada !== 'X'
+        
+    // }
 
-        seguirTrabajando = teclaApretada !== 'X'
-       
-    }
+
 }
 
 function obtenerDescuentoPorMetros(cantidadMetrosCuadrados) {
@@ -135,7 +151,7 @@ function obtenerDescuentoPorMetros(cantidadMetrosCuadrados) {
     }
 
     // retorno por defecto
-        return 0
+    return 0
 
 }
 
@@ -147,10 +163,10 @@ function obtenerInteresPorCuotas(cantidadCuotas) {
     if (cantidadCuotas <= 3) {
         interesPorCuotas = 0
     } else {
-        if (cantidadCuotas => 4 && cantidadCuotas <= 6) {
+        if (cantidadCuotas >= 4 && cantidadCuotas <= 6) {
             interesPorCuotas = 15
         } else {
-            if (cantidadCuotas => 7 && cantidadCuotas <= 12) {
+            if (cantidadCuotas >= 7 && cantidadCuotas <= 12) {
                 interesPorCuotas = 30
             }
         }
@@ -158,3 +174,4 @@ function obtenerInteresPorCuotas(cantidadCuotas) {
 
     return Math.round(interesPorCuotas)
 }
+

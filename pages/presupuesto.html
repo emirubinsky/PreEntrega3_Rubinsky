@@ -31,7 +31,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-     <script scr=""></script>   
+    <script scr=""></script>
 </head>
 
 <body>
@@ -85,6 +85,19 @@
                 </div>
             </div>
 
+            <div class="css_grid_form_container">
+                <form action="" class="css_grid_form">
+                    <label for="name">Nombre Proyecto</label>
+                    <input type="text" name="name">
+
+                    <label for="metros_cuadrados">Cantidad metros cuadrados</label>
+                    <input type="text" type="number" id="metros_cuadrados" name="metros_cuadrados">
+
+                    <label for="cantidad_cuotas">Cantidad cuotas</label>
+                    <input type="text" type="number" id="cantidad_cuotas" name="cantidad_cuotas">
+                </form>
+            </div>
+
             <div class="row">
                 <div class="col xs-6">
                     <div class="">
@@ -93,6 +106,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col xs-6">
+                    <div class="">
+                        <table id="resultTable" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Numero Cuota</th>
+                                    <th>Valor Cuota</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Table rows will be generated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            
 
             <div class="row">
                 <div class="col xs-6">
@@ -130,7 +163,7 @@
 
 
     <script src="../scripts/presupuesto_libreria.js"></script>
-   
+
 </body>
 
 
