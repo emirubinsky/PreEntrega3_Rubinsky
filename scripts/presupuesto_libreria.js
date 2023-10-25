@@ -21,8 +21,14 @@ document.getElementById('btn-simulador').addEventListener('click',
         // Con esto evitamos que se haga "submit" del formulario
         event.preventDefault();
 
+        // Guardamos el titulo del proyecto en el Storage
+        // Store
+        const nombreProyecto = document.getElementById('nombre_proyecto_input').value;
+        localStorage.setItem("nombre_proyecto_storage", nombreProyecto);
+
         const metrosCuadrados = document.getElementById('metros_cuadrados').value;
-        const cantidadCuotas = document.getElementById('cantidad_cuotas').value;
+        const cantidadCuotas = document.querySelector('input[name="cantidad_cuotas"]:checked').value;
+        // document.getElementById('cantidad_cuotas').value;
 
         // Ejecutamos la funcion que esta dentro del objeto-presupuestador
         objetoPresupuestador.ejecutarPresupuestador(metrosCuadrados, cantidadCuotas)
@@ -36,8 +42,7 @@ document.getElementById('btn-simulador').addEventListener('click',
 function presupuestacion(cantidadMetrosCuadrados, cantidadCuotas) {
     // Codigo personalizado
 
-    /*alert(`Orgá
-    Nica.
+    /*alert(`Orgánica.
     ============================================
     Simulador Presupuesto de obra por Metro Cuadrado
     ============================================
@@ -51,75 +56,80 @@ function presupuestacion(cantidadMetrosCuadrados, cantidadCuotas) {
     //let seguirTrabajando = true
 
     // Aquí llamo a la propiedad DENTRO del objeto
+
     const precioMetroEnDolares = this.CONSTANTE_PRECIO_METRO_EN_DOLARES;
 
-   
+
     //while (seguirTrabajando) {
 
-        // const cantidadMetrosCuadrados = parseInt(prompt('Ingresar metros cuadrados de la obra a realizar:'))
+    // const cantidadMetrosCuadrados = parseInt(prompt('Ingresar metros cuadrados de la obra a realizar:'))
 
-        // const cantidadCuotas = parseInt(prompt('Ingresar cantidad de cuotas a pagar:\nOpc A: Entre 1 a 3 cuotas: 0% interes.\nOpc B: Entre 4 a 6 cuotas: 15% interes\nOpc C: Entre 7 a 12 cuotas cuotas: 30% interes'))
+    // const cantidadCuotas = parseInt(prompt('Ingresar cantidad de cuotas a pagar:\nOpc A: Entre 1 a 3 cuotas: 0% interes.\nOpc B: Entre 4 a 6 cuotas: 15% interes\nOpc C: Entre 7 a 12 cuotas cuotas: 30% interes'))
 
-        // INFO: Codigo reemplazado por una llamada a funcion
-        let descuentoMetrosCuadrados = obtenerDescuentoPorMetros(cantidadMetrosCuadrados)
+    // INFO: Codigo reemplazado por una llamada a funcion
+    let descuentoMetrosCuadrados = obtenerDescuentoPorMetros(cantidadMetrosCuadrados)
 
-        // INFO: Codigo reemplazado por una llamada a funcion
-        let interesPorCuotas = obtenerInteresPorCuotas(cantidadCuotas)
+    // INFO: Codigo reemplazado por una llamada a funcion
+    let interesPorCuotas = obtenerInteresPorCuotas(cantidadCuotas)
 
-        // Calculamos el precio
-        const precioTotalMetraje = precioMetroEnDolares * cantidadMetrosCuadrados
-        const descuentoAlMetraje = descuentoMetrosCuadrados > 0 ?
-            Math.round((descuentoMetrosCuadrados * precioTotalMetraje) / 100) :
-            0
-        const precioTotal = precioTotalMetraje - descuentoAlMetraje // Precio contado
+    // Calculamos el precio
+    const precioTotalMetraje = precioMetroEnDolares * cantidadMetrosCuadrados
+    const descuentoAlMetraje = descuentoMetrosCuadrados > 0 ?
+        Math.round((descuentoMetrosCuadrados * precioTotalMetraje) / 100) :
+        0
+    const precioTotal = precioTotalMetraje - descuentoAlMetraje // Precio contado
 
-        // Calculamos valor cuotas
-        const precioTotalConInteres = interesPorCuotas > 0 ?
-            precioTotal + Math.round(((interesPorCuotas * precioTotal) / 100)) : // Precio contado
-            precioTotal
-        const valorCadaCuota = Math.round(precioTotalConInteres / cantidadCuotas)
+    // Calculamos valor cuotas
+    const precioTotalConInteres = interesPorCuotas > 0 ?
+        precioTotal + Math.round(((interesPorCuotas * precioTotal) / 100)) : // Precio contado
+        precioTotal
+    const valorCadaCuota = Math.round(precioTotalConInteres / cantidadCuotas)
 
-        // Cargando cada cuota dentro de un array.
-        let arrayDeCuotas = []
-        for (let index = 0; index < cantidadCuotas; index++) {
-            arrayDeCuotas.push(valorCadaCuota);
-        }
+    // Cargando cada cuota dentro de un array.
+    let arrayDeCuotas = []
+    for (let index = 0; index < cantidadCuotas; index++) {
+        arrayDeCuotas.push(valorCadaCuota);
+    }
 
-        // Mostramos resultados
-        /*
-        alert(`Orgánica.
-    ============================================
-    Simulador Presupuesto - RESULTADOS
-    ============================================
-    
-    TOTAL Mts2         = ${cantidadMetrosCuadrados} Mts2
-    PRECIO CONTADO     = ${precioTotal} USD
-    VALOR Mts2         = ${precioMetroEnDolares} USD / Mts2
-    
-    PRECIO FINANCIADO  = ${precioTotalConInteres} USD
-    CANTIDAD CUOTAS    = ${cantidadCuotas} Cuotas
-    
-    Continue para ver cada cuota.
-    
-    ============================================
-    
-    Presione ENTER para continuar`)
-    */
+    // Mostramos resultados
+    /*
+    alert(`Orgánica.
+============================================
+Simulador Presupuesto - RESULTADOS
+============================================
+ 
+TOTAL Mts2         = ${cantidadMetrosCuadrados} Mts2
+PRECIO CONTADO     = ${precioTotal} USD
+VALOR Mts2         = ${precioMetroEnDolares} USD / Mts2
+ 
+PRECIO FINANCIADO  = ${precioTotalConInteres} USD
+CANTIDAD CUOTAS    = ${cantidadCuotas} Cuotas
+ 
+Continue para ver cada cuota.
+ 
+============================================
+ 
+Presione ENTER para continuar`)
+*/
 
-        let desgloseCuotas = "";
-        let numeroCuota = 1;
+    let desgloseCuotas = "";
+    let numeroCuota = 1;
 
-        const tableBody = document.getElementById('tableBody');
-        tableBody.innerHTML = '';
+    const tableBody = document.getElementById('tableBody');
+    tableBody.innerHTML = '';
 
-        arrayDeCuotas.forEach(cuota => {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td>Cuota nº${numeroCuota}</td> <td>${cuota}</td>`;
-            tableBody.appendChild(row);
-            numeroCuota++
-        });
+    arrayDeCuotas.forEach(cuota => {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>Cuota nº${numeroCuota}</td> <td>${cuota}</td>`;
+        tableBody.appendChild(row);
+        numeroCuota++
+    });
 
-/*
+    // Imprimimos el nombre del proyecto, desde el storage
+    const nombreProyectoDesdeElStorage = localStorage.getItem("nombre_proyecto_storage");
+    document.getElementById('nombre_proyecto_visual').innerHTML = nombreProyectoDesdeElStorage;
+
+    /*
         alert(`Orgánica.
     ============================================
     Simulador Presupuesto - Desglosa cuotas
@@ -131,10 +141,10 @@ function presupuestacion(cantidadMetrosCuadrados, cantidadCuotas) {
     
     Presione ENTER para continuar`)
 */
-        // const teclaApretada = prompt('Simulacion finalizada.\nPresione X para salir.')
+    // const teclaApretada = prompt('Simulacion finalizada.\nPresione X para salir.')
 
-        // seguirTrabajando = teclaApretada !== 'X'
-        
+    // seguirTrabajando = teclaApretada !== 'X'
+
     // }
 
 

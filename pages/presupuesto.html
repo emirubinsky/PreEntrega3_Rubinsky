@@ -85,21 +85,74 @@
                 </div>
             </div>
 
-            <div class="css_grid_form_container">
-                <form action="" class="css_grid_form">
-                    <label for="name">Nombre Proyecto</label>
-                    <input type="text" name="name">
+            <div id="formulario" class="">
+                <!-- <form action="" class="css_grid_form"> -->
+                <div id="proyecto_nombre_div" style="   
+                display: flex;
+                flex-direction: row;
+                width: 45%;
+                justify-content: space-between;
+                margin-top: 10px;">
+                    <label for="nombre_proyecto_input">Nombre Proyecto</label>
+                    <input type="text" id="nombre_proyecto_input" name="nombre_proyecto_input">
+                </div>
 
+                <div id="metros_cuadros_div" style="   
+                display: flex;
+                flex-direction: row;
+                width: 45%;
+                justify-content: space-between;
+                margin-top: 10px;">
                     <label for="metros_cuadrados">Cantidad metros cuadrados</label>
-                    <input type="text" type="number" id="metros_cuadrados" name="metros_cuadrados">
-
+                    <input type="number" id="metros_cuadrados" name="metros_cuadrados">
+                </div>
+                <div>
                     <label for="cantidad_cuotas">Cantidad cuotas</label>
-                    <input type="text" type="number" id="cantidad_cuotas" name="cantidad_cuotas">
-                </form>
+                </div>
+                <div class="cuotas" style="
+                    width: 45%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    margin-top: 10px;
+                ">
+                    <label><input type="radio" name="cantidad_cuotas" value="1" checked>1 cuota</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="2">2 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="3">3 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="4">4 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="5">5 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="6">6 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="7">7 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="8">8 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="9">9 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="10">10 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="11">11 cuotas</label>
+                    <label><input type="radio" name="cantidad_cuotas" value="12">12 cuotas</label>
+                </div>
+
+                <div class="descuentos">
+                    <h3>Descuentos:</h3>
+                    <div>
+                        <p>Si tu obra tiene una superficie mayor a 100mt2 entonces tienes 5% descuento</p>
+                        <p>Si tu obra tiene una superficie mayor a 200mt2 entonces tienes 8% descuento</p>
+                    </div>
+                </div>
+
+                <div class="intereses">
+                    <h3>Intereses:</h3>
+                    <ul>
+                        <li>Entre 1 a 3 cuotas: 0% interés.</li>
+                        <li>Entre 4 a 6 cuotas: 15% interés.</li>
+                        <li>Entre 7 a 12 cuotas: 30% interés.</li>
+                    </ul>
+                </div>
+                <!-- </form> -->
             </div>
 
+
             <div class="row">
-                <div class="col xs-6">
+                <div class="col-xs-6">
                     <div class="">
                         <input id="btn-simulador" type="submit" value="Simular Prespuesto Organica."
                             class="css_grid_form_buttons">
@@ -107,9 +160,11 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col xs-6">
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-md-6">
                     <div class="">
+                        <h3>Presupuesto para el proyecto:</h3> 
+                        Proyecto nombre: <label id="nombre_proyecto_visual"></label>
                         <table id="resultTable" border="1">
                             <thead>
                                 <tr>
@@ -125,9 +180,9 @@
                 </div>
             </div>
 
-            
 
-            <div class="row">
+
+            <div class="row" style="margin-top: 25px;">
                 <div class="col xs-6">
                     <p class="" style="font-style: italic;">
                         Sepa que los precios finales pueden diferir al momento de solicitar el servicio.
